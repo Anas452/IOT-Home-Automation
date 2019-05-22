@@ -19,7 +19,7 @@ app.get('/lighton',(req,res)=>{
         console.log('Error: ', err.toString())
     })
     console.log("ligth is on");
-    res.sendFile(path.join(__dirname+'OFF.html'));
+    res.sendFile(path.join(__dirname+'/ON.html'));
 });
 
 app.get('/lightoff',(req,res)=>{
@@ -31,7 +31,7 @@ app.get('/lightoff',(req,res)=>{
         console.log('Error: ', err.toString())
     })
     console.log("ligth is off");
-    res.sendFile(path.join(__dirname+'OFF.html'));
+    res.sendFile(path.join(__dirname+'/OFF.html'));
 })
 
 app.listen(8000,()=>{
